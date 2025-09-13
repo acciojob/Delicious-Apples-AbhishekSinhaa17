@@ -13,7 +13,6 @@ body {
   min-height: 100vh;
 }
 
-/* Main Card */
 .product {
   display: flex;
   background: #fff;
@@ -23,7 +22,6 @@ body {
   width: 850px;
 }
 
-/* LEFT: Product Photo */
 .product__photo {
   background: linear-gradient(135deg, #5fb878, #2f8d46);
   flex: 1;
