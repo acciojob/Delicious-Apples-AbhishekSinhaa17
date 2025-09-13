@@ -1,1 +1,187 @@
-/* your code here */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Card */
+.product {
+  display: flex;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 850px;
+}
+
+/* LEFT: Product Photo */
+.product__photo {
+  background: linear-gradient(135deg, #5fb878, #2f8d46);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+}
+
+.photo-container {
+  width: 100%;
+}
+
+.photo-main {
+  position: relative;
+}
+
+.photo-main img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.controls {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.controls i {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.controls i:hover {
+  transform: scale(1.2);
+}
+
+.photo-album {
+  margin-top: 25px;
+}
+
+.photo-album ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  justify-content: center;
+}
+
+.photo-album img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.photo-album img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* RIGHT: Product Info */
+.product__info {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 28px;
+  color: #333;
+}
+
+.title span {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2f8d46;
+  margin: 25px 0;
+}
+
+.variant h3 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.variant ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+}
+
+.variant ul li img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border 0.3s, transform 0.2s;
+}
+
+.variant ul li img:hover {
+  border: 2px solid #2f8d46;
+  transform: scale(1.05);
+}
+
+.description {
+  margin-top: 25px;
+}
+
+.description h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.description p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  margin-top: 30px;
+}
+
+.add-to-cart button {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  background: #2f8d46;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.add-to-cart button:hover {
+  background: #26753a;
+  transform: translateY(-2px);
+}
